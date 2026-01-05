@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>More | Hong Kexin</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script defer src="./assets/js/i18n.js"></script>
+  <script defer src="./assets/js/main.js"></script>
+</head>
+
+<body>
+<header>
+  <div class="topbar">
+    <div class="logo">
+      <span class="dot"></span>
+      <span>HK</span>
+    </div>
+
+    <div class="lang-switch" aria-label="Language Switch">
+      <button type="button" data-lang="zh">中文</button>
+      <button type="button" data-lang="ja">日本語</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </div>
+
+  <div class="navrow">
+    <nav class="nav-links">
+      <a href="./index.html" data-i18n="nav_home"></a>
+      <a href="./home.html" data-i18n="nav_about"></a>
+      <a href="./experience.html" data-i18n="nav_experience"></a>
+      <a href="./more.html" data-i18n="nav_more"></a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1 data-i18n="more_h1"></h1>
+    <p class="subtitle" data-i18n="more_intro"></p>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2 data-i18n="more_sec_hobbies"></h2>
+      <ul class="list">
+        <li data-i18n="more_h_li1"></li>
+        <li data-i18n="more_h_li2"></li>
+        <li data-i18n="more_h_li3"></li>
+        <li data-i18n="more_h_li4"></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 data-i18n="more_sec_collect"></h2>
+      <div class="tags" style="margin-top:10px">
+        <span class="tag" data-i18n="more_tag1"></span>
+        <span class="tag" data-i18n="more_tag2"></span>
+        <span class="tag" data-i18n="more_tag3"></span>
+        <span class="tag" data-i18n="more_tag4"></span>
+        <span class="tag" data-i18n="more_tag5"></span>
+      </div>
+      <p style="margin-top:10px" data-i18n="more_collect_p"></p>
+    </div>
+  </section>
+
+  <section class="card" style="margin-top:14px">
+    <h2 data-i18n="more_sec_issues"></h2>
+    <p data-i18n="more_issues_p"></p>
+    <div class="tags" style="margin-top:10px">
+      <span class="tag" data-i18n="more_issue1"></span>
+      <span class="tag" data-i18n="more_issue2"></span>
+      <span class="tag" data-i18n="more_issue3"></span>
+      <span class="tag" data-i18n="more_issue4"></span>
+      <span class="tag" data-i18n="more_issue5"></span>
+    </div>
+  </section>
+
+  <section class="card" style="margin-top:14px">
+    <h2 data-i18n="more_sec_volunteer"></h2>
+    <p data-i18n="more_volunteer_p"></p>
+  </section>
+
+  <section id="contact" class="card" style="margin-top:14px">
+    <h2 data-i18n="contact_title"></h2>
+    <p data-i18n-html="contact_body_html"></p>
+  </section>
+
+  <footer>
+    <div class="footer-row">
+      <div class="small">© 2026 Hong Kexin</div>
+      <div class="small"><a href="./index.html">Home</a></div>
+    </div>
+  </footer>
+</main>
+</body>
+</html>
