@@ -51,15 +51,15 @@ window.I18N = {
     "exp.section.can.t5": "排流程、统筹现场、协调资源，解决执行阶段的具体问题",
     "exp.section.can.quote": "我擅长把“讨论”变成“下一步”。",
 
-    "exp.section.edu": "教育",
+    "exp.section.edu": "教育背景",
     "exp.edu.1.date": "2025.04–至今",
-    "exp.edu.1.title": "东京科学大学（Science Tokyo，旧东京工业大学）｜环境・社会理工学院｜土木・环境工学系｜都市・环境学｜硕士（M1）",
+    "exp.edu.1.title": "东京科学大学｜环境・社会理工学院｜土木・环境工学系｜都市・环境学｜硕士",
     "exp.edu.1.meta": "城市更新 / 社区营造 / 公共空间 / 文化与日常生活",
     "exp.edu.2.date": "2019.04–2020.02",
-    "exp.edu.2.title": "东京大学｜研修生｜文化资源管理",
+    "exp.edu.2.title": "东京大学｜人文社会研究科｜文化经营学｜研修生",
     "exp.edu.2.meta": "文化政策 / 文化遗产保护 / 文化机构管理",
     "exp.edu.3.date": "2013.09–2018.07",
-    "exp.edu.3.title": "北京大学｜文学学士｜艺术史论",
+    "exp.edu.3.title": "北京大学｜艺术学院｜艺术史论｜文学学士",
     "exp.edu.3.meta": "美术史 / 博物馆学 / 公共艺术 / 文化产业",
 
     "exp.section.work": "工作经历",
@@ -149,7 +149,7 @@ window.I18N = {
 
     // MORE
     "more.title": "更多",
-    "more.subtitle": "一些更私人、更生活化的我。",
+    "more.subtitle": "一些更私人、更生活化的我",
 
     "more.card.photo.title": "一张我的照片",
     "more.card.photo.note": "（可选）你可以放一张日常照片在这里。",
@@ -208,7 +208,7 @@ window.I18N = {
     "about.pill.skills": "企画 × ライティング × 推進 ｜東京",
 
     "about.section.who.title": "私について",
-    "about.section.who.p1": "中国・北京出身。学びの出発点は美術史です。観光・文化系プラットフォーム、クリエイティブスタジオ、まちづくりのチームなどで実務と実践を重ねてきました。",
+    "about.section.who.p1": "中国・北京出身。学びの出発点は芸術史論です。文化観光プラットフォーム、クリエイティブスタジオ、まちづくりのチームなどで実務と実践を重ねてきました。",
     "about.section.who.p2": "現在は東京で、都市とコミュニティに関わる研究と実践を続けています。文化・空間・日常生活の関係に関心があります。",
 
     "about.section.care.title": "関心領域",
@@ -243,13 +243,13 @@ window.I18N = {
 
     "exp.section.edu": "学歴",
     "exp.edu.1.date": "2025.04–現在",
-    "exp.edu.1.title": "東京科学大学（Science Tokyo／旧・東京工業大学）｜環境・社会理工学院｜土木・環境工学系｜都市・環境学 コース｜坂村研究室｜修士（M1）",
+    "exp.edu.1.title": "東京科学大学（旧・東京工業大学）｜環境・社会理工学院｜土木・環境工学系｜都市・環境学 コース｜坂村研究室｜M1",
     "exp.edu.1.meta": "都市再生 / まちづくり / 公共空間 / 文化と日常生活",
     "exp.edu.2.date": "2019.04–2020.02",
-    "exp.edu.2.title": "東京大学｜研修生｜文化資源研究室",
+    "exp.edu.2.title": "東京大学｜人文社会研究科｜文化資源研究室｜研究生",
     "exp.edu.2.meta": "文化政策 / 文化遺産保護 / 文化施設マネジメント",
     "exp.edu.3.date": "2013.09–2018.07",
-    "exp.edu.3.title": "北京大学｜学士｜美術史",
+    "exp.edu.3.title": "北京大学｜芸術学部｜芸術史論｜文学学士",
     "exp.edu.3.meta": "美術史 / 博物館学 / パブリックアート/ 文化産業",
 
     "exp.section.work": "職歴",
@@ -435,10 +435,10 @@ window.I18N = {
     "exp.edu.1.title": "Science Tokyo (formerly Tokyo Tech)｜School of Environment and Society｜Civil & Environmental Engineering｜Urban Design & Built Environmental Course｜M1",
     "exp.edu.1.meta": "Urban renewal / Community building / Public space / Culture & everyday life",
     "exp.edu.2.date": "2019.04–2020.02",
-    "exp.edu.2.title": "The University of Tokyo｜Visiting trainee｜Cultural resources management",
+    "exp.edu.2.title": "The University of Tokyo｜Cultural resources management|Research Student",
     "exp.edu.2.meta": "Cultural policy / Heritage conservation / Cultural institutions management",
     "exp.edu.3.date": "2013.09–2018.07",
-    "exp.edu.3.title": "Peking University｜B.A.｜History of Arts",
+    "exp.edu.3.title": "Peking University｜History of Arts|B.A.",
     "exp.edu.3.meta": "Art history / Museology / Public art / Cultural industries",
 
     "exp.section.work": "Work",
