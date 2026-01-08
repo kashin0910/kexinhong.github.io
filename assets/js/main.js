@@ -1,55 +1,45 @@
-(() => {
-  const LANG_KEY = "site_lang";
+(function () {
+  const DEFAULT_LANG = "zh";
+  const STORAGE_KEY = "hkx_lang";
 
-  function getSavedLang() {
-    return localStorage.getItem(LANG_KEY) || "zh";
+  function getLang() {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    return saved || DEFAULT_LANG;
   }
-  function setSavedLang(lang) {
-    localStorage.setItem(LANG_KEY, lang);
+
+  function setLang(lang) {
+    localStorage.setItem(STORAGE_KEY, lang);
   }
 
   function applyI18n(lang) {
-    const dict = window.I18N && window.I18N[lang];
-    if (!dict) return;
-
+    const dict = (window.I18N && window.I18N[lang]) ? window.I18N[lang] : window.I18N[DEFAULT_LANG];
     document.documentElement.lang = lang;
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
-      if (dict[key] !== undefined) el.textContent = dict[key];
+      const text = dict[key];
+      if (typeof text === "string") {
+        el.textContent = text;
+      }
     });
 
-    document.querySelectorAll("[data-i18n-html]").forEach((el) => {
-      const key = el.getAttribute("data-i18n-html");
-      if (dict[key] !== undefined) el.innerHTML = dict[key];
-    });
-
-    document.querySelectorAll("[data-lang]").forEach((btn) => {
-      btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
-    });
-  }
-
-  function setActiveNav() {
-    const file = (location.pathname.split("/").pop() || "index.html").toLowerCase();
-    document.querySelectorAll(".nav-links a").forEach((a) => {
-      const href = (a.getAttribute("href") || "").toLowerCase();
-      a.classList.toggle("active", href.endsWith(file));
+    // update lang button UI
+    document.querySelectorAll(".lang-btn").forEach((btn) => {
+      btn.classList.toggle("is-active", btn.dataset.lang === lang);
     });
   }
 
-  function initLangSwitch() {
-    document.querySelectorAll("[data-lang]").forEach((btn) => {
+  function bindLangButtons() {
+    document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
-        const lang = btn.getAttribute("data-lang");
-        setSavedLang(lang);
+        const lang = btn.dataset.lang;
+        setLang(lang);
         applyI18n(lang);
       });
     });
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    setActiveNav();
-    initLangSwitch();
-    applyI18n(getSavedLang());
-  });
+  // init
+  bindLangButtons();
+  applyI18n(getLang());
 })();

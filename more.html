@@ -3,100 +3,122 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>More | Hong Kexin</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <script defer src="./assets/js/i18n.js"></script>
-  <script defer src="./assets/js/main.js"></script>
+  <title>Hong Kexin | 更多</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
-<header>
-  <div class="topbar">
-    <div class="logo">
-      <span class="dot"></span>
-      <span>HK</span>
-    </div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Hong Kexin</span>
+      </a>
 
-    <div class="lang-switch" aria-label="Language Switch">
-      <button type="button" data-lang="zh">中文</button>
-      <button type="button" data-lang="ja">日本語</button>
-      <button type="button" data-lang="en">EN</button>
-    </div>
-  </div>
+      <nav class="nav">
+        <a class="nav-link" href="index.html" data-i18n="nav.about">关于</a>
+        <a class="nav-link" href="experience.html" data-i18n="nav.experience">经历</a>
+        <a class="nav-link is-active" href="more.html" data-i18n="nav.more">更多</a>
+      </nav>
 
-  <div class="navrow">
-    <nav class="nav-links">
-      <a href="./index.html" data-i18n="nav_home"></a>
-      <a href="./home.html" data-i18n="nav_about"></a>
-      <a href="./experience.html" data-i18n="nav_experience"></a>
-      <a href="./more.html" data-i18n="nav_more"></a>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-  <section class="hero">
-    <h1 data-i18n="more_h1"></h1>
-    <p class="subtitle" data-i18n="more_intro"></p>
-  </section>
-
-  <section class="grid">
-    <div class="card">
-      <h2 data-i18n="more_sec_hobbies"></h2>
-      <ul class="list">
-        <li data-i18n="more_h_li1"></li>
-        <li data-i18n="more_h_li2"></li>
-        <li data-i18n="more_h_li3"></li>
-        <li data-i18n="more_h_li4"></li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2 data-i18n="more_sec_collect"></h2>
-      <div class="tags" style="margin-top:10px">
-        <span class="tag" data-i18n="more_tag1"></span>
-        <span class="tag" data-i18n="more_tag2"></span>
-        <span class="tag" data-i18n="more_tag3"></span>
-        <span class="tag" data-i18n="more_tag4"></span>
-        <span class="tag" data-i18n="more_tag5"></span>
+      <div class="lang">
+        <button class="lang-btn is-active" data-lang="zh">中文</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+        <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <p style="margin-top:10px" data-i18n="more_collect_p"></p>
     </div>
-  </section>
+  </header>
 
-  <section class="card" style="margin-top:14px">
-    <h2 data-i18n="more_sec_issues"></h2>
-    <p data-i18n="more_issues_p"></p>
-    <div class="tags" style="margin-top:10px">
-      <span class="tag" data-i18n="more_issue1"></span>
-      <span class="tag" data-i18n="more_issue2"></span>
-      <span class="tag" data-i18n="more_issue3"></span>
-      <span class="tag" data-i18n="more_issue4"></span>
-      <span class="tag" data-i18n="more_issue5"></span>
-    </div>
-  </section>
+  <main class="container">
+    <section class="page-head">
+      <h1 class="page-title" data-i18n="more.title">更多</h1>
+      <div class="page-sub" data-i18n="more.subtitle">一些更私人、更生活化的我。</div>
+    </section>
 
-  <section class="card" style="margin-top:14px">
-    <h2 data-i18n="more_sec_volunteer"></h2>
-    <p data-i18n="more_volunteer_p"></p>
-  </section>
+    <section class="grid grid-2">
 
-  <section id="contact" class="card" style="margin-top:14px">
-    <h2 data-i18n="contact_title"></h2>
-    <p data-i18n-html="contact_body_html"></p>
-  </section>
+      <!-- ✅ 合并卡片：照片 + tags + 那句话（无标题） -->
+      <article class="card">
+        <div class="photo photo--hero">
+          <img src="assets/img/profile.jpg" alt="Profile photo" loading="lazy" onerror="this.remove();" />
+        </div>
 
-  <footer>
-    <div class="footer-row">
-      <div class="small">© 2026 Hong Kexin</div>
-      <div class="small"><a href="./index.html">Home</a></div>
-    </div>
-  </footer>
-</main>
+        <div class="tag-row tag-row--top">
+          <span class="tag" data-i18n="more.card.how.t1">#好奇心驱动</span>
+          <span class="tag" data-i18n="more.card.how.t2">#空间观察</span>
+          <span class="tag" data-i18n="more.card.how.t3">#日常记录</span>
+        </div>
+
+        <p class="card-text card-text--tight" data-i18n="more.card.how.p">
+          慢慢走路、认真观察，把城市当作一本可以反复阅读的书。
+        </p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title" data-i18n="more.card.hobby.title">兴趣与收藏</h2>
+        <div class="pill-wrap">
+          <span class="chip" data-i18n="more.hobby.1">长颈鹿收藏家</span>
+          <span class="chip" data-i18n="more.hobby.2">城市漫步者</span>
+          <span class="chip" data-i18n="more.hobby.3">旅行与田野观察</span>
+          <span class="chip" data-i18n="more.hobby.4">美术馆/博物馆巡礼</span>
+          <span class="chip" data-i18n="more.hobby.5">书店巡礼</span>
+          <span class="chip" data-i18n="more.hobby.6">咖啡 / 酒吧巡礼</span>
+          <span class="chip" data-i18n="more.hobby.7">语言爱好者</span>
+          <span class="chip" data-i18n="more.hobby.8">耳机星人</span>
+          <span class="chip" data-i18n="more.hobby.9">球技爱好者</span>
+          <span class="chip" data-i18n="more.hobby.10">人生体验家</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title" data-i18n="more.card.vol.title">志愿活动</h2>
+        <div class="pill-wrap">
+          <span class="chip" data-i18n="more.vol.1">动物保护</span>
+          <span class="chip" data-i18n="more.vol.2">艺术节志愿者</span>
+          <span class="chip" data-i18n="more.vol.3">儿童食堂</span>
+          <span class="chip" data-i18n="more.vol.4">残障人士支援</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title" data-i18n="more.card.issue.title">我关注的社会议题</h2>
+        <ul class="list compact">
+          <li data-i18n="more.issue.1">女性主义 / 性别平等</li>
+          <li data-i18n="more.issue.2">教育与成长</li>
+          <li data-i18n="more.issue.3">育儿与家庭支持</li>
+          <li data-i18n="more.issue.4">养老与照护</li>
+          <li data-i18n="more.issue.5">残障与无障碍</li>
+          <li data-i18n="more.issue.6">心理健康与情绪支持</li>
+          <li data-i18n="more.issue.7">外国人生活者 / 移民议题</li>
+          <li data-i18n="more.issue.8">社区互助与社会包容</li>
+          <li data-i18n="more.issue.9">公共空间的可达性与公平性</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title" data-i18n="more.card.contact.title">联系我</h2>
+        <div class="contact">
+          <div class="contact-row">
+            <span class="contact-label">Email</span>
+            <a class="contact-value" href="mailto:hong.k.ab@m.titech.ac.jp">hong.k.ab@m.titech.ac.jp</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Instagram</span>
+            <a class="contact-value" href="https://instagram.com/hkx0910" target="_blank" rel="noreferrer">@hkx0910</a>
+          </div>
+        </div>
+        <div class="fine" data-i18n="more.card.contact.fine">欢迎合作交流。</div>
+      </article>
+
+    </section>
+
+    <footer class="footer">
+      <div>© <span data-i18n="footer.copyright">2026 Hong Kexin</span></div>
+      <div class="muted"><span data-i18n="footer.updated">Last updated:</span> 2026-01-07</div>
+    </footer>
+  </main>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

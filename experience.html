@@ -3,103 +3,329 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Experience | Hong Kexin</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <script defer src="./assets/js/i18n.js"></script>
-  <script defer src="./assets/js/main.js"></script>
+  <title>Hong Kexin | 经历</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
-<header>
-  <div class="topbar">
-    <div class="logo">
-      <span class="dot"></span>
-      <span>HKX</span>
-    </div>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Hong Kexin</span>
+      </a>
 
-    <div class="lang-switch" aria-label="Language Switch">
-      <button type="button" data-lang="zh">中文</button>
-      <button type="button" data-lang="ja">日本語</button>
-      <button type="button" data-lang="en">EN</button>
-    </div>
-  </div>
+      <nav class="nav">
+        <a class="nav-link" href="index.html" data-i18n="nav.about">关于</a>
+        <a class="nav-link is-active" href="experience.html" data-i18n="nav.experience">经历</a>
+        <a class="nav-link" href="more.html" data-i18n="nav.more">更多</a>
+      </nav>
 
-  <div class="navrow">
-    <nav class="nav-links">
-      <a href="./index.html" data-i18n="nav_home"></a>
-      <a href="./about.html" data-i18n="nav_about"></a>
-      <a href="./experience.html" data-i18n="nav_experience"></a>
-      <a href="./more.html" data-i18n="nav_more"></a>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-  <section class="hero">
-    <h1 data-i18n="exp_h1"></h1>
-    <p class="subtitle" data-i18n="exp_intro"></p>
-  </section>
-
-  <section class="card" style="margin-top:14px">
-    <div class="timeline">
-      <div class="item">
-        <div class="top">
-          <div class="role" data-i18n="exp_t1_role"></div>
-          <div class="meta" data-i18n="exp_t1_meta"></div>
-        </div>
-        <p data-i18n="exp_t1_p"></p>
-      </div>
-
-      <div class="item">
-        <div class="top">
-          <div class="role" data-i18n="exp_t2_role"></div>
-          <div class="meta" data-i18n="exp_t2_meta"></div>
-        </div>
-        <p data-i18n="exp_t2_p"></p>
-      </div>
-
-      <div class="item">
-        <div class="top">
-          <div class="role" data-i18n="exp_t3_role"></div>
-          <div class="meta" data-i18n="exp_t3_meta"></div>
-        </div>
-        <p data-i18n="exp_t3_p"></p>
-      </div>
-
-      <div class="item">
-        <div class="top">
-          <div class="role" data-i18n="exp_t4_role"></div>
-          <div class="meta" data-i18n="exp_t4_meta"></div>
-        </div>
-        <p data-i18n="exp_t4_p"></p>
-      </div>
-
-      <div class="item">
-        <div class="top">
-          <div class="role" data-i18n="exp_side_role"></div>
-          <div class="meta" data-i18n="exp_side_meta"></div>
-        </div>
-        <p data-i18n="exp_side_p"></p>
+      <div class="lang">
+        <button class="lang-btn is-active" data-lang="zh">中文</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+        <button class="lang-btn" data-lang="en">EN</button>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section id="contact" class="card" style="margin-top:14px">
-    <h2 data-i18n="contact_title"></h2>
-    <p data-i18n-html="contact_body_html"></p>
-  </section>
+  <main class="container">
+    <section class="page-head">
+      <h1 class="page-title" data-i18n="exp.title">经历</h1>
+      <div class="page-sub" data-i18n="exp.subtitle">教育・工作・项目</div>
+    </section>
 
-  <footer>
-    <div class="footer-row">
-      <div class="small">© 2026 Hong Kexin</div>
-      <div class="small"><a href="./index.html">Home</a></div>
-    </div>
-  </footer>
-</main>
+    <section class="stack">
+      <article class="card">
+        <h2 class="card-title" data-i18n="exp.section.can.title">我能做什么</h2>
+        <p class="card-text" data-i18n="exp.section.can.p">
+          我在项目中，主要负责把前期想法变成可执行的方案，并推进到现场发生：策划定位、写作表达、沟通协调与组织执行。
+        </p>
+        <ul class="list">
+          <li><span class="kw" data-i18n="exp.section.can.kw1">策划与定位：</span><span data-i18n="exp.section.can.t1">把零散想法与多方诉求收束成一个清晰的项目逻辑</span></li>
+          <li><span class="kw" data-i18n="exp.section.can.kw2">写作与表达：</span><span data-i18n="exp.section.can.t2">方案/报告/PPT，传播稿与宣传材料，活动/展览文案与视频脚本</span></li>
+          <li><span class="kw" data-i18n="exp.section.can.kw3">传播与内容策划：</span><span data-i18n="exp.section.can.t3">用文章、视频、展览、活动等形式把项目“讲清楚、带进去”</span></li>
+          <li><span class="kw" data-i18n="exp.section.can.kw4">沟通与协作：</span><span data-i18n="exp.section.can.t4">推进会议、做信息对齐，把讨论结论落到下一步任务</span></li>
+          <li><span class="kw" data-i18n="exp.section.can.kw5">组织与执行：</span><span data-i18n="exp.section.can.t5">排流程、统筹现场、协调资源，解决执行阶段的具体问题</span></li>
+        </ul>
+        <div class="quote" data-i18n="exp.section.can.quote">我擅长把“讨论”变成“下一步”。</div>
+      </article>
+
+      <section class="section">
+        <h2 class="section-title" data-i18n="exp.section.edu">教育</h2>
+
+        <article class="card card-row">
+          <div class="date-badge" data-i18n="exp.edu.1.date">2025.04–至今</div>
+          <div class="card-row-body">
+            <div class="row-title" data-i18n="exp.edu.1.title">
+              东京科学大学（Science Tokyo，旧东京工业大学）｜环境・社会理工学院｜土木・环境工学系｜都市・环境学 Course｜硕士（M1）
+            </div>
+            <div class="row-meta">
+              <span class="dot">•</span>
+              <span data-i18n="exp.edu.1.meta">城市更新 / 社区营造 / 公共空间 / 文化与日常生活</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-row">
+          <div class="date-badge" data-i18n="exp.edu.2.date">2019.04–2020.02</div>
+          <div class="card-row-body">
+            <div class="row-title" data-i18n="exp.edu.2.title">东京大学｜研修生｜文化资源管理</div>
+            <div class="row-meta">
+              <span class="dot">•</span>
+              <span data-i18n="exp.edu.2.meta">文化政策/文化遗产保护/文化机构管理</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-row">
+          <div class="date-badge" data-i18n="exp.edu.3.date">2013.09–2018.07</div>
+          <div class="card-row-body">
+            <div class="row-title" data-i18n="exp.edu.3.title">北京大学｜文学学士｜艺术史论</div>
+            <div class="row-meta">
+              <span class="dot">•</span>
+              <span data-i18n="exp.edu.3.meta">美术史/博物馆学/公共艺术/文化产业</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title" data-i18n="exp.section.work">工作经历</h2>
+
+        <article class="card card-row">
+          <div class="date-badge" data-i18n="exp.work.1.date">2023.06–2023.10</div>
+          <div class="card-row-body">
+            <div class="row-title" data-i18n="exp.work.1.title">Sketch Action｜社区项目策划与执行（社区营造相关）｜兼职｜中国·深圳</div>
+            <ul class="list compact">
+              <li data-i18n="exp.work.1.b1">参与深圳大和社区志《大和录》策划与编辑：内容结构、采访整理、编辑推进</li>
+              <li data-i18n="exp.work.1.b2">将居民活动与社区素材整理为可传播、可使用的项目文本</li>
+              <li data-i18n="exp.work.1.b3">参与多项目支持：近邻活动执行、儿童自然教育、障碍者照护项目组织、阳台改造项目宣传等</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card card-row">
+          <div class="date-badge" data-i18n="exp.work.2.date">2021.09–2023.03</div>
+          <div class="card-row-body">
+            <div class="row-title" data-i18n="exp.work.2.title">33Good｜品牌战略与传播策划（项目型）｜全职｜中国·北京</div>
+            <ul class="list compact">
+              <li data-i18n="exp.work.2.b1">从定位到传播：竞品梳理、策略提案、内容规划与落地统筹</li>
+              <li data-i18n="exp.work.2.b2">产出物覆盖：传播资料、视频脚本、展览内容、活动与传播协同</li>
+              <li data-i18n="exp.work.2.b3">客户（代表）：万达、融创、华润、金地、远洋等大型房产公司</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card card-row">
+          <div class="date-badge" data-i18n="exp.work.3.date">2021.06–2021.09</div>
+          <div class="card-row-body">
+            <div class="row-title" data-i18n="exp.work.3.title">Time Out 北京｜数字营销 / 新媒体运营（城市更新综合体）｜兼职｜中国·北京</div>
+            <ul class="list compact">
+              <li data-i18n="exp.work.3.b1">负责首钢大型城市更新综合体六工汇新媒体内容：选题、采写、编辑与发布节奏</li>
+              <li data-i18n="exp.work.3.b2">与线下空间/活动联动，提升内容的到达与转化</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card card-row">
+          <div class="date-badge" data-i18n="exp.work.4.date">2020.04–2021.06</div>
+          <div class="card-row-body">
+            <div class="row-title" data-i18n="exp.work.4.title">SMART 度假产业平台｜企划运营（文旅平台型咨询 + 活动落地）｜全职｜中国·北京</div>
+            <ul class="list compact">
+              <li data-i18n="exp.work.4.b1">负责日常运营与内容：组织与项目资料梳理、官网/新媒体、调研与报告策划</li>
+              <li data-i18n="exp.work.4.b2">参与大型项目/活动：博鳌文化创意周、长江文化艺术周等（策划支持 + 执行协同）</li>
+              <li data-i18n="exp.work.4.b3">多方沟通与推进：政府申报材料、传播方案、渠道拓展、票务销售等</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title" data-i18n="exp.section.side">兼职 / 合作</h2>
+        <article class="card card-row">
+          <div class="date-badge" data-i18n="exp.side.1.date">2024–至今</div>
+          <div class="card-row-body">
+            <div class="row-title" data-i18n="exp.side.1.title">东京｜并行角色（可合作）</div>
+            <ul class="list compact">
+              <li data-i18n="exp.side.1.b1">中文教学：面向日语母语学习者的课程设计、口语纠音与文化主题教学</li>
+              <li data-i18n="exp.side.1.b2">写作与内容：日本城市/街区观察、文化与空间相关中文写作</li>
+              <li data-i18n="exp.side.1.b3">导览协助：以“空间 × 日常体验”为线索的动线与讲解设计</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title" data-i18n="exp.section.intern">实习</h2>
+        <article class="card">
+          <ul class="list compact">
+            <li data-i18n="exp.intern.1">2018.12–2019.02｜UCCA 尤伦斯当代艺术中心｜展览部</li>
+            <li data-i18n="exp.intern.2">2017.10–2018.01｜中国美术馆｜公共教育部</li>
+            <li data-i18n="exp.intern.3">2017.06–2017.08｜网易（北京）｜云音乐运营</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title" data-i18n="exp.section.projects">部分项目</h2>
+
+        <!-- Project 1 -->
+        <article class="card project">
+          <div class="project-head">
+            <h3 class="project-title" data-i18n="proj.1.title">项目 1｜《大和录》社区杂志（深圳）</h3>
+            <div class="tag-row">
+              <span class="tag" data-i18n="proj.1.tag1">#社区营造</span>
+              <span class="tag" data-i18n="proj.1.tag2">#内容策划</span>
+              <span class="tag" data-i18n="proj.1.tag3">#编辑写作</span>
+              <span class="tag" data-i18n="proj.1.tag4">#资料整理</span>
+              <span class="tag" data-i18n="proj.1.tag5">#叙事结构</span>
+            </div>
+          </div>
+
+          <p class="project-one" data-i18n="proj.1.one">
+            以社区杂志为载体，把城中村的社区营造成果“整理成可传播的叙事与资料库”。
+          </p>
+
+          <div class="gallery">
+            <figure class="shot">
+              <img src="assets/img/yamato-magazine1.jpg" alt="Yamato Magazine 1" loading="lazy" />
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/yamato-magazine2.jpg" alt="Yamato Magazine 2" loading="lazy" />
+            </figure>
+          </div>
+
+          <div class="grid grid-2 gap-sm">
+            <div>
+              <div class="mini-title" data-i18n="proj.bg">项目背景/目的</div>
+              <p class="card-text" data-i18n="proj.1.bg">
+                大和社区是深圳发展较完善的城中村，因社工介入与社区营造实践具有示范性。项目对内凝聚社区、对外传播建设经验与提升形象，启动《大和录》社区杂志项目。
+              </p>
+            </div>
+            <div>
+              <div class="mini-title" data-i18n="proj.do">我做了什么</div>
+              <ul class="list compact">
+                <li><span class="kw" data-i18n="proj.1.do1k">内容策划：</span><span data-i18n="proj.1.do1">整体内容结构与栏目框架</span></li>
+                <li><span class="kw" data-i18n="proj.1.do2k">内容生产：</span><span data-i18n="proj.1.do2">资料收集、采访/信息整理与撰写（部分）</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card project">
+          <div class="project-head">
+            <h3 class="project-title" data-i18n="proj.2.title">项目 2｜2021 长江文化艺术周（重庆）｜共创策划 × 媒体统筹 × 文案</h3>
+            <div class="tag-row">
+              <span class="tag" data-i18n="proj.2.tag1">#活动策划</span>
+              <span class="tag" data-i18n="proj.2.tag2">#项目统筹</span>
+              <span class="tag" data-i18n="proj.2.tag3">#多方协作</span>
+              <span class="tag" data-i18n="proj.2.tag4">#内容传播</span>
+              <span class="tag" data-i18n="proj.2.tag5">#大型活动执行</span>
+            </div>
+          </div>
+
+          <p class="project-one" data-i18n="proj.2.one">
+            全城多场域的大型文化活动，统筹“共创机构联动 + 传播排期 + 文案输出”，推动活动落地。
+          </p>
+
+          <div class="gallery">
+            <figure class="shot">
+              <img src="assets/img/yangtze-artweek1.jpg" alt="Yangtze Art Week 1" loading="lazy" />
+            </figure>
+            <figure class="shot">
+              <img src="assets/img/yangtze-artweek2.jpg" alt="Yangtze Art Week 2" loading="lazy" />
+            </figure>
+          </div>
+
+          <div class="grid grid-2 gap-sm">
+            <div>
+              <div class="mini-title" data-i18n="proj.overview">项目概况</div>
+              <p class="card-text" data-i18n="proj.2.overview">
+                以“艺术+”为主题，重庆外滩广场为主会场，辐射至重庆电厂、四川美术学院等分会场；联动沿线百余家博物馆、美术馆、书店、文创空间等，包含峰会、展览、市集、工坊、沙龙、亲子研学与沉浸式体验等。
+              </p>
+            </div>
+            <div>
+              <div class="mini-title" data-i18n="proj.do">我做了什么</div>
+              <ul class="list compact">
+                <li><span class="kw" data-i18n="proj.2.do1k">共创策划：</span><span data-i18n="proj.2.do1">负责共创板块的策划与落地（招募、联络、执行）</span></li>
+                <li><span class="kw" data-i18n="proj.2.do2k">机构协同：</span><span data-i18n="proj.2.do2">联动近百个共创机构（戏剧/电影/音乐/绘画/摄影/装置等）</span></li>
+                <li><span class="kw" data-i18n="proj.2.do3k">媒体统筹：</span><span data-i18n="proj.2.do3">宣发推广排期、内容协作、编辑资源安排</span></li>
+                <li><span class="kw" data-i18n="proj.2.do4k">文案：</span><span data-i18n="proj.2.do4">活动宣传文案撰写</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card project">
+          <div class="project-head">
+            <h3 class="project-title" data-i18n="proj.3.title">项目 3｜2020 城市更新地图（中国）｜策划&执行</h3>
+            <div class="tag-row">
+              <span class="tag" data-i18n="proj.3.tag1">#城市更新</span>
+              <span class="tag" data-i18n="proj.3.tag2">#内容产品</span>
+              <span class="tag" data-i18n="proj.3.tag3">#项目运营</span>
+              <span class="tag" data-i18n="proj.3.tag4">#传播策划</span>
+              <span class="tag" data-i18n="proj.3.tag5">#统筹执行</span>
+            </div>
+          </div>
+
+          <p class="project-one" data-i18n="proj.3.one">
+            把“城市更新案例”做成一个可检索、可传播的内容产品，用案例连接创意、资源与合作。
+          </p>
+
+          <div class="gallery">
+            <figure class="shot">
+              <img src="./assets/img/urban-renewal-map1.jpeg" alt="Urban Renewal Map 1" loading="lazy" />
+            </figure>
+            <figure class="shot">
+              <img src="./assets/img/urban-renewal-map2.jpeg" alt="Urban Renewal Map 2" loading="lazy" />
+            </figure>
+          </div>
+
+          <div class="grid grid-2 gap-sm">
+            <div>
+              <div class="mini-title" data-i18n="proj.purpose">项目目的</div>
+              <p class="card-text" data-i18n="proj.3.purpose">
+                集结城市更新优秀创变案例，推动思想碰撞与资源链接，探索城市复兴与社区活化的策略与模式，助力推动中国城市更新进程。
+              </p>
+            </div>
+            <div>
+              <div class="mini-title" data-i18n="proj.do">我做了什么</div>
+              <ul class="list compact">
+                <li><span class="kw" data-i18n="proj.3.do1k">全流程统筹：</span><span data-i18n="proj.3.do1">征集 → 评审 → 联络 → 榜单发布 → 宣传推广</span></li>
+                <li><span class="kw" data-i18n="proj.3.do2k">内容与传播协同：</span><span data-i18n="proj.3.do2">推动项目从内容生产到传播发布的闭环</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card-title" data-i18n="exp.section.contact.title">联系我</h2>
+          <div class="contact">
+            <div class="contact-row">
+              <span class="contact-label">Email</span>
+              <a class="contact-value" href="mailto:hong.k.ab@m.titech.ac.jp">hong.k.ab@m.titech.ac.jp</a>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Instagram</span>
+              <a class="contact-value" href="https://instagram.com/hkx0910" target="_blank" rel="noreferrer">@hkx0910</a>
+            </div>
+          </div>
+          <div class="fine" data-i18n="exp.section.contact.fine">欢迎合作交流！</div>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <div>© <span data-i18n="footer.copyright">2026 Hong Kexin</span></div>
+        <div class="muted"><span data-i18n="footer.updated">Last updated:</span> 2026-01-07</div>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

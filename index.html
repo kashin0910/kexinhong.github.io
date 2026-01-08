@@ -3,87 +3,102 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hong Kexin</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-  <script defer src="./assets/js/i18n.js"></script>
-  <script defer src="./assets/js/main.js"></script>
+  <title>Hong Kexin | 关于</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
-<header>
-  <div class="topbar">
-    <div class="logo">
-      <span class="dot"></span>
-      <span>HKX</span>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-dot"></span>
+        <span class="brand-text">Hong Kexin</span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link is-active" href="index.html" data-i18n="nav.about">关于</a>
+        <a class="nav-link" href="experience.html" data-i18n="nav.experience">经历</a>
+        <a class="nav-link" href="more.html" data-i18n="nav.more">更多</a>
+      </nav>
+
+      <div class="lang">
+        <button class="lang-btn is-active" data-lang="zh">中文</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
     </div>
+  </header>
 
-    <div class="lang-switch" aria-label="Language Switch">
-      <button type="button" data-lang="zh">中文</button>
-      <button type="button" data-lang="ja">日本語</button>
-      <button type="button" data-lang="en">EN</button>
-    </div>
-  </div>
+  <main class="container">
+    <section class="hero">
+      <h1 class="hero-name" data-i18n="about.name.zh">洪可心</h1>
+      <div class="hero-sub">
+        <div class="hero-subline" data-i18n="about.name.ja">コー・カシン</div>
+        <div class="hero-subline" data-i18n="about.name.en">Hong Kexin</div>
+      </div>
 
-  <div class="navrow">
-    <nav class="nav-links">
-      <a href="./index.html" data-i18n="nav_home"></a>
-      <a href="./about.html" data-i18n="nav_about"></a>
-      <a href="./experience.html" data-i18n="nav_experience"></a>
-      <a href="./more.html" data-i18n="nav_more"></a>
-    </nav>
-  </div>
-</header>
+      <div class="hero-pills">
+        <span class="pill" data-i18n="about.pill.interests">城市更新｜社区营造｜文化介入｜地方创生</span>
+        <span class="pill pill-soft" data-i18n="about.pill.skills">策划 × 写作 × 项目推进 ｜东京</span>
+      </div>
+    </section>
 
-<main class="container">
-  <section class="hero">
-    <h1>洪可心 / コー・カシン / Hong Kexin</h1>
-    <p class="subtitle" data-i18n="home_subtitle"></p>
+    <section class="grid grid-2">
+      <article class="card">
+        <h2 class="card-title" data-i18n="about.section.who.title">我是谁</h2>
+        <p class="card-text" data-i18n="about.section.who.p1">
+          我来自中国·北京，学习起始于艺术史论。曾在文旅平台、创意工作室以及社区营造团队等项目中工作与实践。
+        </p>
+        <p class="card-text" data-i18n="about.section.who.p2">
+          目前在东京继续进行城市与社区相关领域的研究与实践，关注文化、空间与日常生活之间的关系。
+        </p>
+      </article>
 
-    <div class="actions">
-      <a class="btn primary" href="./about.html" data-i18n="btn_about"></a>
-      <a class="btn" href="./experience.html" data-i18n="btn_experience"></a>
-      <a class="btn" href="#contact" data-i18n="btn_contact"></a>
-    </div>
-  </section>
+      <article class="card">
+        <h2 class="card-title" data-i18n="about.section.care.title">我关心什么</h2>
+        <ul class="list">
+          <li>
+            <span class="kw" data-i18n="about.section.care.kw1">城市更新：</span>
+            <span data-i18n="about.section.care.t1">历史与当代之间的衔接，以及更新对生活与关系的影响</span>
+          </li>
+          <li>
+            <span class="kw" data-i18n="about.section.care.kw2">社区营造：</span>
+            <span data-i18n="about.section.care.t2">参与机制、公共空间与日常微触点如何促成连结</span>
+          </li>
+          <li>
+            <span class="kw" data-i18n="about.section.care.kw3">文化介入：</span>
+            <span data-i18n="about.section.care.t3">内容、活动与场景如何帮助空间被理解与被使用</span>
+          </li>
+          <li>
+            <span class="kw" data-i18n="about.section.care.kw4">地方创生：</span>
+            <span data-i18n="about.section.care.t4">移住、观光与地方经济/社会结构之间的互动</span>
+          </li>
+        </ul>
+      </article>
 
-  <section class="grid">
-    <div class="card">
-      <h2 data-i18n="index_card_about_title"></h2>
-      <p data-i18n="index_card_about_p"></p>
-    </div>
+      <article class="card">
+        <h2 class="card-title" data-i18n="about.section.contact.title">联系我</h2>
+        <div class="contact">
+          <div class="contact-row">
+            <span class="contact-label">Email</span>
+            <a class="contact-value" href="mailto:hong.k.ab@m.titech.ac.jp">hong.k.ab@m.titech.ac.jp</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-label">Instagram</span>
+            <a class="contact-value" href="https://instagram.com/hkx0910" target="_blank" rel="noreferrer">@hkx0910</a>
+          </div>
+        </div>
+        <div class="fine" data-i18n="about.section.contact.fine">欢迎合作交流！</div>
+      </article>
+    </section>
 
-    <div class="card">
-      <h2 data-i18n="index_card_focus_title"></h2>
-      <p data-i18n="index_card_focus_p"></p>
-    </div>
-  </section>
+    <footer class="footer">
+      <div>© <span data-i18n="footer.copyright">2026 Hong Kexin</span></div>
+      <div class="muted"><span data-i18n="footer.updated">Last updated:</span> 2026-01-07</div>
+    </footer>
+  </main>
 
-  <section class="card" style="margin-top:14px">
-    <h2 data-i18n="index_card_do_title"></h2>
-    <ul class="list">
-      <li data-i18n="index_card_do_li1"></li>
-      <li data-i18n="index_card_do_li2"></li>
-      <li data-i18n="index_card_do_li3"></li>
-      <li data-i18n="index_card_do_li4"></li>
-    </ul>
-  </section>
-
-  <section id="contact" class="card" style="margin-top:14px">
-    <h2 data-i18n="contact_title"></h2>
-    <p data-i18n-html="contact_body_html"></p>
-  </section>
-
-  <footer>
-    <div class="footer-row">
-      <div class="small">© 2026 Hong Kexin</div>
-      <div class="small"><a href="./index.html">Home</a></div>
-    </div>
-  </footer>
-</main>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
